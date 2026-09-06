@@ -1,0 +1,19 @@
+# Core scientific stack
+numpy>=1.24
+scipy>=1.10
+pandas>=1.5
+matplotlib>=3.6
+tqdm>=4.65
+
+# NOTE: pyGIMLi is NOT listed here - install it via conda/mamba, not pip.
+# See README.md "Installation" for the recommended command. Once pyGIMLi
+# is installed in your environment, run `pip install -r requirements.txt`
+# for everything else above.
+#
+# NOTE: TetGen (the tetrahedral mesh generator) is a separate command-line
+# tool, not a pip package. It must be on PATH, or pointed to via the
+# TETGEN_DIR variable in the scripts that need 3D meshing.
+#
+# NOTE: tkinter (used by Corrected_Generator.py's GUI) ships with most
+# Python installs. On some Linux distributions install it separately:
+#   sudo apt install python3-tk

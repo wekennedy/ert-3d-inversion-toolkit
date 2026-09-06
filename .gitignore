@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Generated outputs - keep pipeline results out of git; regenerate them by
+# re-running the scripts. The example survey data under data/ IS tracked
+# deliberately (small text files, kept so the toolkit is self-contained).
+/output/
+*.dat
+*.bms
+*.vtk
+*.xyz
+Runs/
+
+# Generated survey design files (re-run the generator to reproduce these)
+spread*.xml
+protocol*.xml
