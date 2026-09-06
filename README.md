@@ -99,9 +99,7 @@ must be pointed at your own data before running.
 ## Acknowledgements
 
 Developed during a Research Assistant internship in the Department of
-Earth Sciences, Durham University. The timelapse inversion workflow
-adapts a 2D timelapse pipeline (`ERTtimelapse_original_v1`, S.
-Bithell). The 'L'-shaped array reading scheme in
+Earth Sciences, Durham University. The 'L'-shaped array reading scheme in
 `Corrected_Generator.py` follows the perpendicular-dipole method of
 Tejero-Andrade et al. (2015), *Near Surface Geophysics*,
 doi:10.3997/1873-0604.2015015.
