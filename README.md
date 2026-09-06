@@ -25,6 +25,9 @@ ert-3d-inversion-toolkit/
 ├── requirements.txt
 ├── .gitignore
 ├── LICENSE
+├── data/
+│   ├── 2x32_example_data/          # example native 3D exports, 2x32 electrode layout
+│   └── 4x16_example_data/          # example native 3D exports, 4x16 electrode layout
 └── src/
     ├── survey_design_and_generation/
     │   ├── Corrected_Generator.py      # builds Spread/Protocol XML for the Terrameter LS/LS2
