@@ -5,14 +5,22 @@ pandas>=1.5
 matplotlib>=3.6
 tqdm>=4.65
 
+# Python bindings for TetGen (tetrahedral meshing), imported directly as
+# `import tetgen` in True3DInversionMain.py. This is a separate package from
+# the TetGen command-line tool noted below - pyGIMLi's own mesh building
+# shells out to the CLI binary, while this import is a fallback/local-build
+# path some of the scripts use.
+tetgen>=0.6
+
 # NOTE: pyGIMLi is NOT listed here - install it via conda/mamba, not pip.
 # See README.md "Installation" for the recommended command. Once pyGIMLi
 # is installed in your environment, run `pip install -r requirements.txt`
 # for everything else above.
 #
-# NOTE: TetGen (the tetrahedral mesh generator) is a separate command-line
-# tool, not a pip package. It must be on PATH, or pointed to via the
-# TETGEN_DIR variable in the scripts that need 3D meshing.
+# NOTE: TetGen the COMMAND-LINE tool (distinct from the `tetgen` pip package
+# above) is what pyGIMLi's mesh building shells out to. It must be on PATH,
+# or pointed to via the TETGEN_DIR variable in the scripts that need 3D
+# meshing.
 #
 # NOTE: tkinter (used by Corrected_Generator.py's GUI) ships with most
 # Python installs. On some Linux distributions install it separately:
